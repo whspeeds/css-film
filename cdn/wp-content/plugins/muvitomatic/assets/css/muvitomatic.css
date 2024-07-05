@@ -1,0 +1,668 @@
+.muvitomatic-pages {
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.muvitomatic-pages .pagination {
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center !important;
+}
+.muvitomatic-pages .pagination .page-item {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+.muvitomatic-pages .pagination .page-item.disabled .page-link {
+    background: #eee;
+    color: #ccc;
+    cursor: not-allowed;
+}
+.muvitomatic-pages .pagination .page-item.disabled .page-link:hover {
+    background: #eee;
+    color: #ccc;
+}
+.muvitomatic-pages .pagination .page-item.active .page-link {
+    background: #d32f2f;
+    color: #fff;
+}
+.muvitomatic-pages .pagination .page-item .page-link {
+    text-decoration: none;
+    background: #fff;
+    color: #d32f2f;
+    padding: 10px 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+.muvitomatic-pages .pagination .page-item .page-link:hover {
+    background: #d32f2f;
+    color: #fff;
+}
+
+#message {
+    position: relative;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+#message .muvitomatic-results {
+    float: left;
+    box-sizing: border-box;
+    width: 1.70999933in;
+    display: inline-block;
+    overflow: hidden;
+    transition: 0.2s;
+    padding: 10px;
+}
+#message .muvitomatic-results .muvi-image {
+    position: relative;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    height: 216px;
+}
+#message .muvitomatic-results .muvi-image img {
+    height: auto;
+    min-width: 100%;
+    width: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+#message .muvitomatic-results article {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 2px;
+    position: relative;
+    transition: 0.2s;
+}
+#message .muvitomatic-results article:hover {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+#message .muvitomatic-results article:hover:before {
+    content: "+";
+    z-index: 99;
+    font-size: 24px;
+    vertical-align: top;
+    padding: 3px 6px 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d32f2f;
+    color: #fff;
+    font-weight: 900;
+}
+#message .muvitomatic-results .muvi-title {
+    padding: 5px;
+    display: block;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.muvitomatic-container {
+    position: relative;
+    display: block;
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.muvitomatic-auto #muvi_year,
+.muvitomatic-auto #muvi_page {
+    width: 100px;
+}
+.muvitomatic-auto #add_all_movie {
+    display: inline-block;
+}
+.muvitomatic-auto input[type=text],
+.muvitomatic-auto input[type=number] {
+    display: inline-block;
+    vertical-align: top;
+    background: #fff;
+    /*padding: 10px;*/
+    height: 40px;
+    border-radius: 2px;
+    width: auto;
+}
+.muvitomatic-auto input[type=text]::placeholder,
+.muvitomatic-auto input[type=number]::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+.muvitomatic-auto select {
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    /*padding: 9px;*/
+}
+.muvitomatic-auto input[type=submit] {
+    padding: 0 25px;
+    height: 41px;
+}
+.muvitomatic-auto #addAllMovie {
+    padding: 0 25px;
+    height: 41px;
+    margin-left: 10px;
+}
+
+.muvitomatic-setting {
+    display: block;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.muvitomatic-search {
+    float: right;
+    display: block;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.muvitomatic-auto.panel {
+    position: relative;
+    margin: 15px auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.muvitomatic-auto.panel .muvitomatic-title {
+    position: relative;
+    display: block;
+    margin: auto auto 10px;
+    padding: 15px;
+    overflow: hidden;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+.muvitomatic-auto .form-control {
+    position: relative;
+    display: block;
+    margin: 10px auto 20px;
+}
+.muvitomatic-auto .form-control input,
+.muvitomatic-auto .form-control textarea,
+.muvitomatic-auto .form-control select {
+    width: 100%;
+}
+.muvitomatic-auto.panel .form-submit {
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+.muvitomatic-auto.panel .form-submit .button-primary {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    background: #d32f2f;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: none;
+    border: none;
+    box-shadow: inset 0 0px 0 0 rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.muvitomatic-auto.panel .form-submit .button-primary:hover {
+    background: #c62828;
+    box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.3);
+}
+.muvitomatic-auto__status, .muvitomatic-auto__interval {
+    width: 50%;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.muvitomatic-label {
+    display: block;
+    margin: 0 auto 10px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.muvitomatic-auto__status select, .muvitomatic-auto__interval select {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+    background: #fafafa;
+    border: none;
+    padding: 10px;
+    height: auto;
+    position: relative;
+}
+
+/**=================== LOADER =======================**/
+
+
+.spin-loader {
+    position: relative;
+    display: block;
+    margin: 100px auto;
+    vertical-align: middle;
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+}
+.spinner-loader {
+    position: absolute;
+    display: block;
+    background-color: #d32f2f;
+    left: 24px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+.spinner-loader.first {
+    animation-timing-function: cubic-bezier(0.5, 0.3, 0.9, 0.9);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 6px 30px;
+    animation-timing-function: cubic-bezier(0.5, 0.3, 0.9, 0.9);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 6px 30px;
+
+}
+.spinner-loader.second {
+    animation-timing-function: cubic-bezier(0.5, 0.5, 0.9, 0.9);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 6px 30px;
+    animation-timing-function: cubic-bezier(0.5, 0.5, 0.9, 0.9);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 6px 30px;
+}
+.spinner-loader.third {
+    animation-timing-function: cubic-bezier(0.5, 0.7, 0.9, 0.9);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 6px 30px;
+    animation-timing-function: cubic-bezier(0.5, 0.7, 0.9, 0.9);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 6px 30px;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        transform: rotate(1440deg) scale(1);
+    }
+}​
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        transform: rotate(1440deg) scale(1);
+    }
+}
+
+.muvitomatic-results .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+.muvitomatic-results.imported article:hover:before {
+    content: "\f147" !important;
+    font-family: dashicons;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-weight: 700;
+    vertical-align: middle;
+    line-height: 25px;
+    padding: 0 !important;
+    font-size: 20px !important;
+    text-align: center;
+    background: #4caf50 !important;
+}
+.muvitomatic-results.imported article:before {
+    position: absolute;
+    z-index: 99;
+    content: "\f147" !important;
+    font-family: dashicons;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-weight: 700;
+    vertical-align: middle;
+    line-height: 25px;
+    padding: 0 !important;
+    font-size: 20px !important;
+    text-align: center;
+    background: #4caf50 !important;
+}
+
+/**==================== no results =========================**/
+.no-result {
+    position: relative;
+    display: block;
+    margin: 3rem auto;
+    overflow: hidden;
+    text-align: center;
+}
+.no-result h2 {
+    font: bold 5rem arial, sans-serif;
+    text-transform: uppercase;
+    background-color: #ccc;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+/**======================= Schedule Posts ====================**/
+.muvitomatic-table {
+    width: auto !important;
+    padding: 10px 20px 10px 10px;
+}
+.muvitomatic-table .dataTables_wrapper {
+    background: #fff;
+    position: relative;
+    display: block;
+    margin: 0 auto !important;
+    overflow: auto !important;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 0;
+}
+.muvitomatic-table .dataTables_wrapper .dataTables_length {
+    padding: 10px;
+}
+.muvitomatic-table .dataTables_wrapper .dataTables_length select {
+    margin: 0 10px;
+}
+.muvitomatic-table .dataTables_wrapper .dataTables_filter {
+    padding: 10px;
+}
+.muvitomatic-table .dataTables_wrapper .dataTables_filter input[type=search] {
+    background: #fafafa;
+    padding: 5px 10px;
+}
+.muvitomatic-table .dataTables_wrapper .dataTables_info {
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.muvitomatic-table .dataTables_wrapper .dataTables_paginate {
+    padding: 0 10px;
+}
+.muvitomatic-table .dataTables_wrapper .paginate_button.current {
+    background: #d32f2f;
+    color: #fff !important;
+    border-color: #d32f2f;
+}
+.muvitomatic-table .dataTables_wrapper .paginate_button.current:hover {
+    background: #b71c1c;
+    color: #fff !important;
+    border-color: #b71c1c;
+}
+.muvitomatic-table .dataTables_wrapper table {
+    border-bottom: 1px solid #eee !important;
+    margin: 10px auto;
+}
+.muvitomatic-table .dataTables_wrapper thead th {
+    border-bottom: 1px solid #ccc !important;
+}
+.muvitomatic-table .dataTables_wrapper td {
+    color: #0073aa;
+    text-align: left;
+    padding: 10px 15px !important;
+}
+.muvitomatic-table .dataTables_wrapper td:nth-child(3) {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.muvitomatic-table .dataTables_wrapper td:nth-child(6) {
+    text-align: right;
+}
+.muvitomatic-table .dataTables_wrapper th:first-child {
+    width: 10% !important;
+}
+.muvitomatic-table .dataTables_wrapper th:nth-child(2) {
+    width: 7% !important;
+}
+.muvitomatic-table .dataTables_wrapper th:nth-child(3) {
+    width: 40% !important;
+}
+.muvitomatic-table .dataTables_wrapper th:nth-child(4) {
+    width: 10% !important;
+}
+.muvitomatic-table .dataTables_wrapper th:nth-child(5) {
+    width: 10% !important;
+}
+.muvitomatic-table .dataTables_wrapper th:nth-child(6) {
+    text-align: right;
+    width: 20% !important;
+}
+
+/**==================== Keyword Generator ========================**/
+.muvitomatic-keyword__head {
+    position: relative;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+.muvitomatic-keyword__head .muvitomatic-head__filter {
+    float: left;
+}
+.muvitomatic-keyword__head .muvitomatic-head__filter select {
+    margin: auto;
+    width: 300px !important;
+}
+.muvitomatic-keyword__head .muvitomatic-head__generate {
+    float: right;
+}
+.muvitomatic-keyword__head .muvitomatic-head__generate .button-primary {
+    padding: 5px 20px;
+    height: auto;
+}
+.muvitomatic-keyword__kw-input {
+    position: relative;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+.muvitomatic-keyword__kw-input #numofkeywords {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0a0a0a;
+}
+.muvitomatic-keyword__kw-input textarea {
+    width: 100%;
+    background: #fafafa;
+    height: 170px !important;
+}
+.muvitomatic-keyword__results h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.muvitomatic-keyword__results #input_results {
+    width: 100%;
+    background: #fafafa;
+    height: 250px !important;
+}
+.muvitomatic-keyword__results .button-primary {
+    float: right;
+    padding: 5px 30px;
+    height: auto;
+}
+
+.muvitomatic-keyword__results .total-keyword {
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.muvitomatic-label-status.published {
+    background: #068d20;
+    color: #fff;
+}
+.muvitomatic-label-status.unpublish {
+    background: #ee512e;
+    color: #fff;
+}
+.muvitomatic-label-status {
+    padding: 3px 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    vertical-align: middle;
+    border-radius: 3px;
+    font-size: 13px;
+    text-decoration: none;
+}
+#muvi_lists > tbody >tr.has-new{
+    background: rgb(255,232,186);
+}
+.clonesia-license {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    background: #fff;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.clonesia-license__brand {
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.clonesia-license__brand img {
+    max-height: 70px;
+}
+
+.clonesia-license__form {
+    transition: 0.5s !important;
+}
+
+.clonesia-license__form input[name=muvitomatic_core_license_key] {
+    background: #fafafa;
+    border: 0;
+    padding: 15px 10px;
+    width: 100%;
+    border-radius: 3px;
+    transition: 0.5s !important;
+}
+
+.clonesia-license__form input[name=muvitomatic_core_license_key]:focus, .clonesia-license__form input[name=muvitomatic_core_license_key]:active, .clonesia-license__form input[name=muvitomatic_core_license_key]:visited, .clonesia-license__form input[name=muvitomatic_core_license_key]:hover {
+    outline: none !important;
+    border: none !important;
+}
+
+.clonesia-license__form .btn-status {
+    position: relative;
+    display: block;
+    margin: auto auto 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.clonesia-license__form .btn-status.is-active {
+    background: #dff0d8;
+    border: 1px solid #dff0d8;
+    color: #3c763d;
+}
+
+.clonesia-license__form .btn-status.not-active {
+    background: #ffcdd2;
+    border: 1px solid #ffcdd2;
+    color: #e53935;
+    text-shadow: none;
+}
+
+.clonesia-license__form .btn-deactive {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    overflow: hidden;
+    background: transparent;
+    border: 2px solid #d32f2f;
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+    border-radius: 3px;
+    color: #444;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.clonesia-license__form .btn-deactive:hover {
+    background: #b71c1c;
+    color: #fff;
+    border-color: #b71c1c;
+}
+
+.clonesia-license__form .btn-activate {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    overflow: hidden;
+    background: #d32f2f;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.clonesia-license__form .btn-activate:hover {
+    background: #b71c1c;
+    color: #fff;
+}
